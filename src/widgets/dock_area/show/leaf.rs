@@ -657,7 +657,7 @@ impl<Tab> DockArea<'_, Tab> {
             ),
         );
 
-        let popup_id = ui.id().with("tab_add_popup");
+        let popup_id = ui.scope_id().with("tab_add_popup");
         if self.show_add_popup {
             Popup::from_toggle_button_response(&response)
                 .id(popup_id)
