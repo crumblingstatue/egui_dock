@@ -1463,8 +1463,8 @@ mod tests {
 
     #[test]
     fn tab_body_ids_differ_between_surfaces() {
-        let dock_area_id = Id::new("dock-area");
-        let tab_id = Id::new("same-tab");
+        let dock_area_id = Id::unique("dock-area");
+        let tab_id = Id::unique("same-tab");
         let node = NodeIndex::root();
 
         let main = NodePath {
